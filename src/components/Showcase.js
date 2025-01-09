@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Clock, ArrowRight, Play, Pause } from 'lucide-react';
 
+import signature from '../assets/signature.webp';
+import diamond from '../assets/diamond.webp';
+import spa from '../assets/spa.webp';
+
 const ShowcaseSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -14,7 +18,7 @@ const ShowcaseSection = () => {
       description: "Eine harmonische Mischung aus therapeutischen Techniken und aromatischen Ölen",
       duration: "90 Min.",
       price: "€195",
-      image: "/api/placeholder/1200/1600",
+      image: signature,
       accent: "#047857"
     },
     {
@@ -23,7 +27,7 @@ const ShowcaseSection = () => {
       description: "Premium-Hautpflegeritual mit Diamantstaub-Peeling",
       duration: "75 Min.",
       price: "€245",
-      image: "/api/placeholder/1200/1600",
+      image: diamond,
       accent: "#7C3AED"
     },
     {
@@ -32,7 +36,7 @@ const ShowcaseSection = () => {
       description: "Alte Heilpraxis mit vulkanischen Basaltsteinen",
       duration: "120 Min.",
       price: "€275",
-      image: "/api/placeholder/1200/1600",
+      image: spa,
       accent: "#B45309"
     }
   ];

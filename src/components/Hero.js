@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, Waves, CalendarDays, Clock } from 'lucide-react';
 
+import wellness from '../assets/wellness.webp';
+import therme from '../assets/therme.webp';
+import spa from '../assets/spa.webp';
+
 const Hero = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   
@@ -8,17 +12,17 @@ const Hero = () => {
     {
       title: "Wellness-Reise",
       subtitle: "Finde inneren Frieden",
-      image: "/api/placeholder/1920/1080",
+      image: wellness,
     },
     {
       title: "Thermische Entspannung",
       subtitle: "Erlebe pure Gelassenheit",
-      image: "/api/placeholder/1920/1080",
+      image: therme,
     },
     {
       title: "Natürliche Heilung",
       subtitle: "Regeneriere deinen Körper",
-      image: "/api/placeholder/1920/1080",
+      image: spa,
     }
   ];
 
